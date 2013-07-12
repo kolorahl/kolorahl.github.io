@@ -3,6 +3,7 @@ html, body, .footer {
   background-color: #111;
   font-family: 'Source Code Pro', Arial, sans-serif;
   text-align: justify;
+  zoom: 1.05;
 }
 
 .navbar-inverse .nav>li>a {
