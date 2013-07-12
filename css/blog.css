@@ -2,8 +2,12 @@ html, body, .footer {
   color: #ddd;
   background-color: #111;
   font-family: 'Source Code Pro', Arial, sans-serif;
+  font-size: 16px;
   text-align: justify;
-  zoom: 1.05;
+}
+
+body>.navbar {
+  font-size: 15px;
 }
 
 .navbar-inverse .nav>li>a {
@@ -26,8 +30,8 @@ section>.page-header {
 }
 
 .img-icon {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 code {

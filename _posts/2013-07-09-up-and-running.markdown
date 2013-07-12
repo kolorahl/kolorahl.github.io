@@ -18,7 +18,7 @@ looking at using. Although I am trying to pick technology that definitely works
 for what I want to build, some of the tech choice also comes down to what new
 things I want to learn right now.
 
-## Erlang (Server)
+### Erlang (Server)
 
 [Erlang][erlang] was selected because it's a fascinating functional language
 specifically designed for concurrent, distributed applications. Although this
@@ -30,7 +30,7 @@ code. Considering how popular "distributed" programming is becoming, I'm
 surprised that a mature and stable language like Erlang isn't considered more
 frequently for new projects.
 
-## Riak (Database)
+### Riak (Database)
 
 It was between MySQL, Redis, or Riak and the leading choice is
 [Riak][riak]. Although I love all three of them, I haven't used Riak
@@ -60,7 +60,7 @@ have a great [video](http://basho.com/how-eventual-is-eventual-consistency/) on
 eventual consistency if anyone is interested in what it is, what it means for a
 user, and how to properly consider the impact of it in your application.
 
-## HTML 5 Canvas (Client)
+### HTML 5 Canvas (Client)
 
 Originally I was planning on trying out [Elm][elm] for this project, but then
 decided against it because it is (a) a little confusing to learn and (b) still
@@ -69,7 +69,7 @@ language and take it for a proper test drive. For now, I'll just be using
 JavaScript and the HTML 5 Canvas tag to draw simple 2D graphics and capture user
 interaction within it.
 
-## Websockets (Client-Server)
+### Websockets (Client-Server)
 
 Choosing the browser gave me really only two choices for client-server
 communication: polling or websockets. Since actions can, and will, impact a user
