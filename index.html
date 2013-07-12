@@ -3,9 +3,20 @@ layout: default
 title: kolorahl's blog
 ---
 
-<h3>Blog Posts</h3>
-<ul class="posts">
-  {% for post in site.posts %}
-  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<section id="posts">
+  <div class="page-header">
+    <h1>Posts</h1>
+  </div>
+
+  <div class="posts">
+    {% for post in site.posts limit:5 %}
+    <div class="post post-preview">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h5>Published: {{ post.date | date_to_string }}</h5>
+      <p class="excerpt">
+        {{ post | excerpt }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

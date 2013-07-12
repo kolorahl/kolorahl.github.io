@@ -5,6 +5,10 @@ html, body, .footer {
   text-align: justify;
 }
 
+.navbar-inverse .nav>li>a {
+  color: #cecece;
+}
+
 header.jumbotron {
   color: #00cc55;
   background: #444;
@@ -16,11 +20,16 @@ header.jumbotron {
   text-align: center;
 }
 
-section > .page-header {
+section>.page-header {
   color: #949494;
 }
 
 .img-icon {
   width: 14px;
   height: 14px;
+}
+
+code {
+  color: #00cc55;
+  background-color: #444;
 }
