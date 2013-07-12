@@ -1,9 +1,14 @@
 html, body, .footer {
   color: #ddd;
   background-color: #111;
-  font-family: 'Source Code Pro', Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Source Code Pro", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   text-align: justify;
+}
+
+li {
+  line-height: 24px;
 }
 
 body>.navbar {
@@ -36,5 +41,13 @@ section>.page-header {
 
 code {
   color: #00cc55;
+  font-family: "Source Code Pro", Monaco, Consolas, monospace;
+  font-size: 14px;
   background-color: #444;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 20px 0 20px 20px;
+  border-left: 5px solid #eee;
 }
