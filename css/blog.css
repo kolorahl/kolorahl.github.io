@@ -7,6 +7,10 @@ html, body, .footer {
   text-align: justify;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 li {
   line-height: 24px;
 }
