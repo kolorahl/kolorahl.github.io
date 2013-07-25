@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript Client Testing"
 date:   2013-07-16 14:20:07
-categories: code, testing
+categories: code testing
 ---
 
 As I mentioned in my [previous]({{page.previous.url}}) post, I'm targeting
