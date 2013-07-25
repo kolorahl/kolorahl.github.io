@@ -7,6 +7,14 @@ html, body, .footer {
   text-align: justify;
 }
 
+a, a:visited {
+  color: #00cc55;
+}
+
+a:hover, a:focus {
+  color: #009C41;
+}
+
 p {
   margin-bottom: 20px;
 }
@@ -54,4 +62,9 @@ blockquote {
   padding: 0 0 0 15px;
   margin: 20px 0 20px 20px;
   border-left: 5px solid #eee;
+}
+
+.post-preview {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
