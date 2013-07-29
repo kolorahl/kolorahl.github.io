@@ -10,13 +10,15 @@ title: blog
 
   <div class="posts">
     {% for post in site.posts limit:5 %}
+    {% assign ps = post.content | split: '<p>' %}
+    {% assign pss = ps[1] | split: '</p>' %}
     <div class="preview">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <h5>Published: {{ post.date | date_to_string }}</h5>
       <p class="excerpt">
-        {{ post.content | truncatewords:80 }} <a href="{{ post.url }}">Read Full
-        Post</a>
+        {{ pss[0] }}
       </p>
+      <p><a href="{{ post.url }}">Read More</a></p>
     </div>
     {% endfor %}
   </div>
