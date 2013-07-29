@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ page.title }}</title>
+    <title>kolorahl :: {{ page.title }}</title>
 
-        <!-- Syntax Highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/main.min.css">
+  </head>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro">
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="/css/docs.css">
-        <link rel="stylesheet" href="/css/blog.css">
+  <body>
+    <div class="container">
 
-        <!-- jQuery and Bootstrap JS -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    </head>
-
-    <body>
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li><a href="/index.html">home</a></li>
-                <li><a href="/about.html">about</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="navbar navbar-inverse">
+        <a class="navbar-brand" href="/index.html">kolorahl</a>
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">recent</a></li>
+          <li><a href="/about.html">about</a></li>
+        </ul>
       </div> <!-- Fixed Top Navbar -->
-
-      <header class="jumbotron subhead">
-        <div class="container">
-          <h1>{{ site.name }}</h1>
-          <h4>&#123;coding, gaming, krav maga&#125;</h4>
-        </div>
-      </header> <!-- Jumbo Page Header -->
 
       <div class="container">
         <div class="row">
-          <div class="span10"> <!-- Main Content Below -->
+          <div class="col-lg-10"> <!-- Main Content Below -->
             {{ content }}
           </div> <!-- Main Content Above -->
-          <div class="span2">
-            <ul class="nav nav-list affix-top">
-              <li class="nav-header">Tyler Margison</li>
-              <li><a href="mailto:kolorahl@gmail.com?subject=You+Are+So+Awesome" target="_blank">
-                  <i class="icon-envelope icon-white"></i> Email
-              </a></li>
-              <li><a href="http://github.com/kolorahl">
-                  <img src="/img/blacktocat.png" class="img-icon">
-                  GitHub
-              </a></li>
-              <li><a href="http://twitter.com/kolorahl">
-                  <img src="/img/twitter_whitebird.png" class="img-icon">
-                  Twitter
-              </a></li>
+          <div class="col-lg-2">
+            <ul class="list-group">
+              <li class="list-group-item">Tyler Margison</li>
+              <li class="list-group-item">
+                <a href="mailto:kolorahl@gmail.com?subject={Subject Here}" target="_blank">Email</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://github.com/kolorahl">GitHub</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://twitter.com/kolorahl">Twitter</a>
+              </li>
+              <li class="list-group-item">
+                <a href="http://www.linkedin.com/in/tylermargison/">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
       </div> <!-- Main Container -->
 
-      <footer class="footer">
-        <div class="container">
-          <p>Published with <a href="http://pages.github.com/">GitHub Pages</a></p>
-        </div>
-      </footer> <!-- Page Footer -->
-    </body>
+      <div class="footer">
+        <p>Published with <a href="http://pages.github.com/">GitHub Pages</a></p>
+      </div> <!-- Page Footer -->
+
+      <!-- Load Scripts Last -->
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
