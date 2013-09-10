@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript Protocol Buffers"
-date:   2013-08-19 15:13
+date:   2013-08-19 15:13:00
 categories: updates code
 ---
 
