@@ -3,6 +3,7 @@ layout: post
 title:  "JavaScript Framework"
 date:   2013-07-25 00:47:00
 categories: code frameworks
+uid: 428053620
 ---
 
 So I said I was going to use HTML 5, JavaScript, and Websocket for my client

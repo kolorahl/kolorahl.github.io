@@ -3,6 +3,7 @@ layout: post
 title:  "Site Update"
 date:   2013-07-29 15:52:00
 categories: updates
+uid: 428453520
 ---
 
 You may notice the site looks different. Well, that's not the result of

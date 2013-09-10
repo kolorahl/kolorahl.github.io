@@ -3,6 +3,7 @@ layout: post
 title:  "Angular vs Backbone"
 date:   2013-08-01 11:37:00
 categories: code
+uid: 428697420
 ---
 
 Alright, I've had some time to mess around with both [Angular.js][ng-home] and

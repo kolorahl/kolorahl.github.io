@@ -3,6 +3,7 @@ layout: post
 title:  "Keeping Code Healthy"
 date:   2013-09-07 17:08:00
 categories: updates code
+uid: 431914080
 ---
 
 I've noticed that few people understand how to keep code, and their application,

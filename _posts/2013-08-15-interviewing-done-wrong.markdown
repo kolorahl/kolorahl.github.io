@@ -3,6 +3,7 @@ layout: post
 title:  "Interviewing Done Wrong"
 date:   2013-08-15 13:58:00
 categories: updates
+uid: 429915480
 ---
 
 I have always been a proponent for interviewing a person by targeting their
