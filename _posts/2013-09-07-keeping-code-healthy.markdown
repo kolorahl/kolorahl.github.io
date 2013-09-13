@@ -7,20 +7,20 @@ uid: 431914080
 ---
 
 I've noticed that few people understand how to keep code, and their application,
-in a healthy state. Especially true with startups, who generally have one or two
+in a healthy state. Especially true with start-ups, who generally have one or two
 engineers come in and start coding with a fervor that almost always leads to a
 metric shitton of mistakes; missing or inadequate testing, poor code
-organization, non-existant or incorrect documentation, repeated code segments,
+organization, non-existent or incorrect documentation, repeated code segments,
 and more. Usually this is because junior developers and management-types of all
 levels have a steadfast belief that if you aren't developing new code your
 product isn't growing and you aren't going to be making money. While it is true
-that you need to make something and provide updates to keep your appllication
+that you need to make something and provide updates to keep your application
 relevant and useful, there's a simple way to also keep your code healthy while
 doing so. And that method is what I like to call the __3-1 Development Cycle__.
 
 ## The Concept
 
-I'm hoping everyone can aggree that bad code eventually needs to be fixed. But
+I'm hoping everyone can agree that bad code eventually needs to be fixed. But
 the longer you leave bad code alone the more time there is for new bad code to
 enter the project, and the more dependencies you create to existing bad
 code. Just like with bugs, the longer they stay in the code the more expensive

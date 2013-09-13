@@ -70,15 +70,15 @@ language and take it for a proper test drive. For now, I'll just be using
 JavaScript and the HTML 5 Canvas tag to draw simple 2D graphics and capture user
 interaction within it.
 
-### Websockets (Client-Server)
+### Web sockets (Client-Server)
 
 Choosing the browser gave me really only two choices for client-server
-communication: polling or websockets. Since actions can, and will, impact a user
+communication: polling or web sockets. Since actions can, and will, impact a user
 without them interacting with the game it is important that the client can be
-kept up-to-date by the server. Websockets seem to be maturing well and, aside
+kept up-to-date by the server. Web sockets seem to be maturing well and, aside
 from simply wanting to try it out, I wanted to avoid request polling if
 possible. Not saying that request polling is bad for a game (it is bad, don't do
-it), but it's just not an optimal use of client or server resources; websockets
+it), but it's just not an optimal use of client or server resources; web sockets
 seem to be the more optimal solution for the browser right now. I'm also hoping
 that, should I build native mobile apps down the road, that I can change little
 on the server to accommodate native socket implementations on mobile clients.

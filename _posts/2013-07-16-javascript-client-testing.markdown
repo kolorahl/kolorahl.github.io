@@ -40,7 +40,7 @@ find time this week. I've already got
 [eunit](http://www.erlang.org/doc/apps/eunit/chapter.html) I plan on using for
 server-side testing, so all I need now is to pick a good client-side testing
 tool. I'll make another post once I've been able to take a look at these tools a
-bit more in-depth and can weigh in on them more authoratatively. If anyone has
+bit more in-depth and can weigh in on them more authoritatively. If anyone has
 used any of these before, feel free to
 [email](mailto:kolorahl@gmail.com?subject=JavaScript+Testing) me with your own
 thoughts and opinions on them, or any outstanding alternatives you've come

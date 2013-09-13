@@ -6,7 +6,7 @@ categories: code frameworks
 uid: 428053620
 ---
 
-So I said I was going to use HTML 5, JavaScript, and Websocket for my client
+So I said I was going to use HTML 5, JavaScript, and Web socket for my client
 tech stack. The only part I forgot to investigate was a JavaScript framework
 that I could use to quickly and easily craft the client experience. Writing
 "massive" JavaScript files by hand using only jQuery and one or two other small
@@ -27,21 +27,21 @@ there are two major concerns I'm taking into consideration for my comparison:
 ## RESTful JSON Communication
 
 Both frameworks use RESTful calls to send and receive JSON payloads when
-communicating with the server. I definitely want to use websockets, so if either
+communicating with the server. I definitely want to use web sockets, so if either
 framework has easy support for it or existing third-party solutions I will look
 more favorably upon that framework. So far this looks to be Backbone.js: I can
-overwrite the `Backbone.sync` function to use WebSocket communication since all
+overwrite the `Backbone.sync` function to use Web Socket communication since all
 server calls funnel through that one method. Angular.js does not seem to be as
 intuitively obvious or as easy to digest as its competitor.
 
 ## jQuery vs Templates
 
-The main draw of Angular.js is the templating system which exposes a very rich
+The main draw of Angular.js is the template system which exposes a very rich
 system for creating views tied to models. Backbone.js views are simply objects
 with a `render` function that is called when the view needs to be updated. I'm
 not thrilled about this, as it pretty much means just using jQuery to grab DOM
 elements and mess around with them at a low level versus the very nice and clean
-templating system used by Angular.js.
+template system used by Angular.js.
 
 ## Reactive Programming
 

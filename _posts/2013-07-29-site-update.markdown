@@ -38,7 +38,7 @@ web pages with. This should mean better load times and nicer-looking pages. I
 personally like it, as I am one for beauty in simplicity. I don't need a bunch
 of fancy colors, drop-shadows, lines, italics, and whatever else the kids think
 are cool these days. I believe the new bootstrap is trying to move toward a
-mantra I've recently started using: Easy to use, eays to consume. This means a
+mantra I've recently started using: Easy to use, easy to consume. This means a
 framework or API that is easy to use for developers and generates content that
 is easy to consume for users.
 
@@ -49,7 +49,7 @@ stylesheets. I decided to give it a try, and I can definitely see why people
 would prefer this over raw CSS coding. The built-in functions are simply
 amazing, and the very simple ability to nest elements is incredible all by
 itself. I'm using [Grunt][gruntjs] for node.js to run [Recess][recess] and turn
-my `*.less` files into minified CSS files. It's eays to get started with Recess,
+my `*.less` files into minified CSS files. It's easy to get started with Recess,
 and using the bootstrap Gruntfile made it easy for me to quickly get Grunt set
 up for my own personal use.
 

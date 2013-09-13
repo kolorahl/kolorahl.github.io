@@ -29,7 +29,7 @@ it's not worth it or that it's unnecessary.
 
 Google was perhaps the worst offender of this, as they had a very small pool of
 acceptable languages you could choose to answer technical questions in, and
-pseudocoding was not a universally accepted substitute among the interviewers.
+pseudo-coding was not a universally accepted substitute among the interviewers.
 
 ### The Solution
 
@@ -155,4 +155,3 @@ will start paving a new path.
 [basho-article]: http://basho.com/erlang-at-basho-five-years-later/
 [bigo]: http://en.wikipedia.org/wiki/Big_O_notation
 [jong]: http://www.jeremyong.com/
-

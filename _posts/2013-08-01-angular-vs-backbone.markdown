@@ -9,15 +9,15 @@ uid: 428697420
 Alright, I've had some time to mess around with both [Angular.js][ng-home] and
 [Backbone.js][bb-home], and I have come away with pros and cons for each. For
 anyone interested in my final decision, I will be using Backbone.js along with
-it's one dependecy, [Underscore.js][us-home]. The final decision came down to
+it's one dependency, [Underscore.js][us-home]. The final decision came down to
 how they each handled data binding.
 
 ## Requirements
 
 To reiterate from a previous post, I am building a game using Erlang on the
-server and WebSockets as the means to communicate between the browser and my
+server and Web Sockets as the means to communicate between the browser and my
 Erlang code. This means I could receive updates to my data without any client
-interaction happening, since WebSockets technology is a bi-directional stream
+interaction happening, since Web Sockets technology is a bi-directional stream
 with either side able to send data when they need to. Whichever framework I
 chose needed to handle server-originated updates to models, and then trigger UI
 updates based on changes to the model.
