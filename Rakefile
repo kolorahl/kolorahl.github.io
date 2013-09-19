@@ -87,3 +87,32 @@ EOS
   end
 
 end
+
+namespace :pages do
+
+  desc "Create a new page using the folder method (for cleaner URLs)"
+  task :new, :name do |t, args|
+    name = args.name.strip
+    path = name.gsub(" ", "-").downcase
+    if Dir.exist?(path)
+      puts "Directory '#{path}' already exists, cannot setup page '#{name}'."
+    else
+      Dir.mkdir(path)
+      page = <<EOS
+---
+layout: default
+title:  #{name}
+---
+
+<section id="#{path}">
+  <div class="page-header">
+    <h1>#{name}</h1>
+  </div>
+
+</section>
+EOS
+      File.write("#{path}/index.html", page)
+    end
+  end
+
+end
