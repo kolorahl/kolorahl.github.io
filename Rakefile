@@ -17,9 +17,10 @@ namespace :posts do
     header = <<EOS
 ---
 layout: post
-uid:    #{id}
-title:  "#{title}"
-date:   #{time.to_s}
+uid: #{id}
+title: #{title}
+date: #{time.to_s}
+permalink: /posts/#{id}
 ---
 
 Enter post body here...
@@ -57,32 +58,25 @@ EOS
     posts = Dir.entries("_posts")
     posts.each do |post|
       next if post.start_with?(".")
-      lines = File.readlines("_posts/#{post}")
-      begun = false
-      date = nil
-      lines.each_index do |idx|
-        line = lines[idx].strip
-        next if line.empty?
-        if line == "---"
-          if begun && date
-            id = date.to_i - $Y2K
-            lines.insert(idx, "uid: #{id}\n")
-            File.write("_posts/#{post}", lines.join(""))
-            break
-          end
-          begun = true
-        end
-        if begun
-          break if line.start_with?("uid:")
-          if line.start_with?("date:")
-            date = line[5, line.length].strip
-            matches = /([0-9]*)-([0-9]*)-([0-9]*) ([0-9]*):([0-9]*):([0-9]*)( [-+][0-9]*)?/.match(date)
-            if matches
-              date = Time.send(:new, *matches[1, matches.length])
-            end
-          end
-        end
-      end
+      add_to_header("_posts/#{post}",
+                           "uid",
+                           lambda {|data|
+                             matches = /([0-9]*)-([0-9]*)-([0-9]*) ([0-9]*):([0-9]*):([0-9]*)( [-+][0-9]*)?/.match(data['date'])
+                             if matches
+                               date = Time.send(:new, *matches[1, matches.length])
+                               date.to_i - $Y2K
+                             end})
+    end
+  end
+
+  desc "For posts without a custom permalink URL, generate one based off the unique post id."
+  task :fix_links do
+    posts = Dir.entries("_posts")
+    posts.each do |post|
+      next if post.start_with?(".")
+      add_to_header("_posts/#{post}",
+                           "permalink",
+                           lambda {|data| "/posts/#{data['uid']}"})
     end
   end
 
@@ -115,4 +109,38 @@ EOS
     end
   end
 
+end
+
+#####################
+## HELPER FUNCTIONS
+#####################
+
+require 'yaml'
+
+def read_page(path)
+  content = File.read(path)
+  data = {}
+  if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)(.*)/m
+    content = $3
+    data = YAML.load($1)
+  end
+  {content: content, data: data}
+end
+
+def write_page(path, page)
+  # Psych has a poor time-to-string format (in my opinion), and this fixes that.
+  header = page[:data].to_yaml + "---\n"
+  header.sub!(/date: ([0-9]*-[0-9]*-[0-9]* [0-9]*:[0-9]*:[0-9]*)[^ ]* ([+-][0-9]*):([0-9]*)/,
+              'date: \1 \2\3')
+  output = header + "\n" + page[:content]
+  File.write(path, output)
+end
+
+def add_to_header(path, key, value)
+  page = read_page(path)
+  unless page[:data][key]
+    val = value.respond_to?(:call) ? value.call(page[:data]) : value
+    page[:data][key] = val
+    write_page(path, page)
+  end
 end

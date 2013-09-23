@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "JavaScript Framework"
-date:   2013-07-25 00:47:00
+title: JavaScript Framework
+date: 2013-07-24 17:47:00 -0700
 categories: code frameworks
 uid: 428053620
+permalink: /posts/428053620
 ---
 
 So I said I was going to use HTML 5, JavaScript, and Web socket for my client

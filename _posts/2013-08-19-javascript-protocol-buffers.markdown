@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "JavaScript Protocol Buffers"
-date:   2013-08-19 15:13:00
+title: JavaScript Protocol Buffers
+date: 2013-08-19 08:13:00 -0700
 categories: updates code
 uid: 430265580
+permalink: /posts/430265580
 ---
 
 I have noticed a distinct lack of JavaScript libraries that easily decode and

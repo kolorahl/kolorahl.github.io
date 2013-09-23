@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "JavaScript Client Testing"
-date:   2013-07-16 14:20:07
+title: JavaScript Client Testing
+date: 2013-07-16 07:20:07 -0700
 categories: code testing
 uid: 427324807
+permalink: /posts/427324807
 ---
 
 As I mentioned in my [previous]({{page.previous.url}}) post, I'm targeting

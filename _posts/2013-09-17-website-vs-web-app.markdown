@@ -1,8 +1,10 @@
 ---
 layout: post
-uid:    432776256
-title:  "Website vs Web App"
-date:   2013-09-17 16:37:36 -0700
+uid: 432776256
+title: Website vs Web App
+date: 2013-09-17 16:37:36 -0700
+categories: web
+permalink: /posts/432776256
 ---
 
 A quick "word of the wise" type of advice for start-ups and budding developers:

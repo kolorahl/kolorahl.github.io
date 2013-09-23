@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Up and Running"
-date:   2013-07-10 16:04:17
+title: Up and Running
+date: 2013-07-10 09:04:17 -0700
 categories: updates
 uid: 426812657
+permalink: /posts/426812657
 ---
 
 I've finally switched over to using GitHub Pages for my personal blog. I've even

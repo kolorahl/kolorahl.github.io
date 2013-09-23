@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Customize Backbone.sync"
-date:   2013-08-06 16:15:00
+title: Customize Backbone.sync
+date: 2013-08-06 09:15:00 -0700
 categories: code
 uid: 429146100
+permalink: /posts/429146100
 ---
 
 So I finally started making reasonable modifications to `Backbone.sync`. For
