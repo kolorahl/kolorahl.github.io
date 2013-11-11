@@ -15,3 +15,5 @@ graphics designer or an artist can combine visually creative elements into their
 resume, I plan to use my knowledge and skill of JavaScript, HTML, and
 programming in general to create an interactive resume experience. I'll post
 another update once it goes live.
+
+[resume]: /resume
