@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 {% include head.html %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <!-- Common Scripts -->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
   </head>
 
   <body>
@@ -11,10 +21,10 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-10"> <!-- Main Content Below -->
+          <div class="col-md-8 col-md-offset-1"> <!-- Main Content Below -->
             {{ content }}
           </div> <!-- Main Content Above -->
-          <div class="col-lg-2">
+          <div class="col-md-2">
 {% include contact_bar.html %}
           </div>
         </div>
