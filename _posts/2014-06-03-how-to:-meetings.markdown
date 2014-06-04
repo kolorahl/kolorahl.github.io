@@ -69,9 +69,8 @@ much time doing so.
 ## When to Hold a Meeting
 
 This is something many people don't know. When is it appropriate to hold a
-meeting? Another important question that is coupled strongly with this: who
-would be necessary in the meeting? Meeting are great for the following
-situations:
+meeting? Lucky for you, I have a comprehensive list of all scenarios where it is
+appropriate to hold a meeting:
 
 - Discussing opinions to reach a decision.
 
@@ -94,10 +93,13 @@ work done in option (B) gives 33% better improvement rate than option
 fact to take into account; that means we can only go with option (A) since the
 alternative takes too long.
 
-The only time discussion becomes necessary is when the facts don't decide a
-clear course of action and therefore require further discussion. This means that
-a number of people should be present: project manager, quality assurance
-manager, designer, developer. This is the minimum, I would say, for a full-sized
+## Sending Out Invitations
+
+Now it is time to decide who to invite and what the agenda will be. Because a
+formal business meeting should only be for discussing opinions to reach a
+decision, there are a few people that should be required for all meetings:
+project manager, quality assurance manager, designer, developer. I would say
+this is an appropriate list of the minimum required attendees for a full-sized
 software development company. The designer needs to be present to ensure that
 the options being discussed are compatible with the desired product/feature
 goal. The project manager needs to know how this will affect the project and if
@@ -106,14 +108,32 @@ direction. The quality assurance manager needs to know how this will affect
 their test plans and timelines. The developer is there to give expert opinion on
 the feasibility, time estimate, and complexity of each option.
 
-I would say that a smaller meeting is acceptable for people prototyping or
-performing research of a product. While a designer should still be present, the
-only additional people necessary will be the developer(s). Generally research
-and prototyping is far more chaotic than development and maintenance of a live
-product.
+Smaller meetings are acceptable for people prototyping or performing research of
+a product. While a designer should still be present, the only additional people
+necessary will be the developer(s). Generally research and prototyping is far
+more chaotic than development and maintenance of a live product.
 
-Now we know under what circumstance a meeting is acceptable and who should be
-involved. We move on to the dreaded scheduling of meetings.
+Once you know the "who" it is time to decide the "what". Something I constantly
+see meeting initiators forget to do is to send out the meeting topic and
+agenda. I frequently see meeting invites that say things such as "Sync Up with
+Client" or "Platform Discussion" or any number of other vague descriptors. And
+almost none of them ever have agendas in the body of the invite. When someone is
+invited to a meeting you should always tell them exactly why it is you are
+calling for this meeting and what is going to be discussed. If you want to
+discuss using one database over another the meeting invite should look like
+"Discuss Database Solution for XYZ" where XYZ is a feature or product. The
+agenda might look something like:
+
+- Pros/Cons for Database A
+- Pros/Cons for Database B
+- Prioritize Database Interactions to Rank Choices
+
+People now know what information they might need to bring to the meeting. They
+should be (for this example) doing research on each database to determine what
+the pros and cons are, as well as investigating which database interactions with
+the product they believe to be most important. By the time the meeting starts
+everyone that should have information prepared to contribute will have it and
+people can jump right into the meat of things.
 
 ## When to Meet
 
