@@ -13,7 +13,8 @@ namespace :posts do
     time = Time.now
     id = time.to_i - $Y2K
     title = args.title
-    file = "#{time.strftime "%Y-%m-%d"}-#{title.downcase.gsub " ","-"}.markdown"
+    pathname = title.downcase.gsub(/[^0-9a-z ]/i, "").gsub(" ", "-")
+    file = "#{time.strftime "%Y-%m-%d"}-#{pathname}.markdown"
     header = <<EOS
 ---
 layout: post
