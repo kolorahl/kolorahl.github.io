@@ -1,4 +1,4 @@
 name: kolorahl's website
 markdown: kramdown
-pygments: true
+highlighter: pygments
 paginate: 5
